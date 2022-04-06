@@ -7,9 +7,68 @@
 }
 
 body {
-  background-color: #fff;
+  background-color: #496bed;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.form {
+  width: 550px;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #fefdfe;
+}
+
+.input {
+  width: 72%;
+  border: none;
+  font-size: 20px;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #2d2c2d;
+}
+.input:focus {
+  outline: none;
+}
+.button {
+  padding: 10px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  background-color: #eeedef;
+}
+.button:focus {
+  background-color: #ccc;
+}
+
+.circle__box {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  color: #fff;
+  border-radius: 50%;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  background-color: #f28338;
+  transition:  all 0.5s ease;
+  animation: anime 1s ease infinite;
+}
+
+@keyframes anime {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
 }
 
