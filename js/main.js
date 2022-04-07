@@ -21,6 +21,7 @@ elForm.addEventListener("submit", (e)=>{
 
   if(count == 0){
     alert("Sorry you need input number");
+    span.style.display = "none";
   }
   
   elBox.appendChild(span);
