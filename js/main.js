@@ -11,9 +11,9 @@ elForm.addEventListener("submit", (e)=>{
   let count = elInput.value;
   setInterval(() =>{
     setTimeout(() =>{
-      span.textContent = count;
       count--;
-      if(count == -1) {
+      span.textContent = count;
+      if(count == 0) {
         span.style.display = "none";
       }
     })
